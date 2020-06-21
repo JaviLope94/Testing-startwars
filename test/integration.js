@@ -3,6 +3,7 @@ const chaiHttp = require('chai-http');
 chai.use(chaiHttp);
 const app = require('../server');
 const expect = chai.expect;
+const should = chai.should();
 
 // starwars mocks
 const starwarsFilmListMock = require('../mocks/starwars/film_list.json');
@@ -22,6 +23,7 @@ describe('GET /films-list', () => {
         console.log(res.status);
         res.should.have.status(200);
         expect(res.body).to.deep.equal(starwarsFilmListMock);
+        expect(res).to.be.json;
         done();
       });
   });

@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node server.js",
     "develop": "nodemon server.js",
-    "prueba": "mocha test/samples-mocha-y-chai/samples.js",
+    "samples": "mocha test/samples-mocha-y-chai/samples.js",
     "unit-tests": "mocha test/unit.js",
     "integration-tests": "mocha --timeout 40000 --exit test/integration.js",
     "mocha": "npm run mocha"
