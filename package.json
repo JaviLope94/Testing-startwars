@@ -1,0 +1,30 @@
+{
+  "name": "api-startwars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "develop": "nodemon server.js",
+    "prueba": "mocha test/samples-mocha-y-chai/samples.js",
+    "unit-tests": "mocha test/unit.js",
+    "integration-tests": "mocha --timeout 40000 --exit test/integration.js",
+    "mocha": "npm run mocha"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mocha": "^8.0.1",
+    "chai": "^4.2.0",
+    "chai-http": "^4.3.0",
+    "cors": "^2.8.5",
+    "flat-cache": "^2.0.1",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.5",
+    "sinon": "^7.5.0"
+  }
+}
