@@ -20,10 +20,18 @@ describe('GET /films-list', () => {
       .request(app)
       .get('/films-list')
       .end((err, res) => {
-        console.log(res.status);
+        console.log(res);
+        expect(res).not.to.have.cookie('sessionid');
         res.should.have.status(200);
+        expect(err).to.be.null;
         expect(res.body).to.deep.equal(starwarsFilmListMock);
+        expect(res.body[0].title).to.deep.equal('A New Hope');
         expect(res).to.be.json;
+
+        expect(res).to.have.header('content-type', 'application/json; charset=utf-8');
+        expect(res).to.be.json;
+        expect(res).not.to.be.html;
+        expect(res).not.to.be.text;
         done();
       });
   });
