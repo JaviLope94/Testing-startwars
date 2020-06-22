@@ -22,9 +22,15 @@ requisitos: URL swapi: https://swapi.dev/
 
         > Comprobar que el valor de la respuesta tiene una variable "title": "A New Hope". Posteriormente comprobar que el valor recibo es un string y que el valor tiene un .lenght de 10.
 
-        > Por último en el package.json crear un nuevo scripy para ejecutar el test y comprobar errores y solucionar
+        > Por último en el package.json crear un nuevo script para ejecutar el test y comprobar errores y solucionar en caso de que sea necesario
 
 
 ## Ejercicio 2
 
+    1º En el fichero exercise.js crear un nuevo caso de prueba: Se va a testear la ruta /people/:id (ejemplo -> people/1/)
     
+        > La persona que vamos a testear es la número 4
+
+
+
+
