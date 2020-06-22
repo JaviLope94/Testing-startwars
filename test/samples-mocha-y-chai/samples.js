@@ -24,21 +24,6 @@ describe('hooks', function () {
     // test cases
 });
 
-describe('asyn await', function () {
-
-    beforeEach(async function () {
-        await assert.ok(true);
-    });
-
-    it('promise', function (done) {
-        return new Promise(function (resolve) {
-            assert.ok(true);
-            resolve();
-            done();
-        });
-    });
-});
-
 // Api completa de asserts: https://www.chaijs.com/api/assert/
 
 describe('Chai - asserts', function () {
@@ -114,6 +99,20 @@ describe('Context & Specify', function () {
     });
 });
 
+describe('asyn await', function () {
+
+    beforeEach(async function () {
+        await assert.ok(true);
+    });
+
+    it('promise', function (done) {
+        return new Promise(function (resolve) {
+            assert.ok(true);
+            resolve();
+            done();
+        });
+    });
+});
 
 // Ejemplo chai http no funcional
 
