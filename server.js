@@ -89,7 +89,7 @@ app.get('/film/:episode', async (req, res) => {
 app.get('/people/:id', async (req, res) => {
   try {
     const person = await starwars.people(req.params.id);
-    res.status(200).send(person);
+    res.status(200).send('person');
   } catch (error) {
     res.status(500).send(error.message);
   }
