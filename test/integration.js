@@ -30,7 +30,6 @@ describe('GET /films-list', () => {
 
         expect(res).to.have.header('content-type', 'application/json; charset=utf-8');
         expect(res).to.be.json;
-        expect(res).not.to.be.html;
         expect(res).not.to.be.text;
         done();
       });
